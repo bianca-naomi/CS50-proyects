@@ -1,18 +1,20 @@
-#include <iostream>
-#include <string>
-
+#include<iostream>
+#include<iomanip>
 using namespace std;
 
-int main () 
-{ 
-	cout << "Please enter you first and last name on the next line." << endl;
+int main()
+{
+	int bottles;
+	cout << "Enter the number of bottles and cans: ";
+	cin >> bottles;
+	int cans;
+	cin >> cans;
 
-	string name;
-	cin >> name;
-	string lastname;
-	cin >> lastname;
-
-	string dot = name.substr(0, 1) + "." + lastname;
-	cout << dot << endl;
-	return (0);
+	cout << "Bottles: ";
+	cout << setw(8) << bottles;
+	cout << endl;
+	cout << "Cans:    ";
+	cout << setw(8) << cans;
+	cout << endl;	
+	return 0;
 }
